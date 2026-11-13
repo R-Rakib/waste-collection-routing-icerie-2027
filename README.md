@@ -12,9 +12,9 @@ This repository contains supplementary materials that could not be included in t
 | File | Contents |
 |---|---|
 | `Supplementary_Materials.pdf` | Dataset, cluster results, full MILP formulation, scenario results, sensitivity results, and reproducibility notes |
-| `Supplementary_Materials.tex` | LaTeX source |
+
 | `figs/` | Original figures from the full paper (Fig. S1–S4) |
-| `01_Comparison_Report.md` | Comparison of the conference paper and supplementary materials |
+
 
 ## How It Relates to the Conference Paper
 
