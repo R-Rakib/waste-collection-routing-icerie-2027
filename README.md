@@ -1,61 +1,74 @@
 # Supplementary Materials: A Two-Stage Clustered MILP Framework for Efficient and Resilient Waste Collection Routing
 
-**Paper ID:** 87
-**Conference:** 9th International Conference on Engineering Research, Innovation, and Education (ICERIE 2027)
-**Authors:** Riasad Rahman Rakib, Hasin Almas Sanim, Md. Mohibul Islam
+**Paper ID:** 87  
+**Conference:** 9th International Conference on Engineering Research, Innovation, and Education (ICERIE 2027)  
+**Authors:** Riasad Rahman Rakib, Hasin Almas Sanim, Md. Mohibul Islam  
 **Affiliation:** Department of Industrial & Production Engineering, Rajshahi University of Engineering & Technology (RUET), Rajshahi-6204, Bangladesh
 
 ## About
 
-This repository extends the paper above. The paper develops a cluster-first, route-second framework for waste collection in the Rajshahi City Corporation (RCC). K-means groups 20 secondary transfer stations (STS) into four zones, and a mixed-integer linear programming (MILP) model routes a heterogeneous fleet of shuttles and sweepers inside each zone. The page limit of the paper left out the full dataset, cluster assignments, the complete model and the extended results. They are provided here.
+This repository provides supplementary materials for the research paper titled *A Two-Stage Clustered MILP Framework for Efficient and Resilient Waste Collection Routing*.
 
-## Files
+The study develops a cluster-first, route-second framework for waste collection in Rajshahi City Corporation (RCC). K-means clustering groups 20 Secondary Transfer Stations (STS) into four zones, and a Mixed-Integer Linear Programming (MILP) model optimizes the routing of a heterogeneous fleet of shuttles and sweepers within each zone.
 
-| File | Contents |
-|:--|:--|
-| `Supplementary_Materials_ICERIE2027_Paper87.docx` | Supplementary document (Word) |
-| `figs/` | Figures S1 to S4 as image files |
+Due to the conference paper's page limit, the complete dataset, cluster assignments, detailed mathematical formulation, and extended results are provided separately in this repository.
 
-## Contents of the supplementary document
+## Repository Structure
 
-| Section | Topic | Tables and figures |
-|:--|:--|:--|
+| Folder/File | Contents |
+|---|---|
+| `Supplementary Materials/` | Detailed supplementary document |
+| `code/` | Python implementation of the MILP model and K-means clustering |
+| `dataset/` | Research datasets used in the study |
+| `README.md` | Repository documentation |
+
+## Contents of the Supplementary Document
+
+| Section | Topic | Tables and Figures |
+|---|---|---|
 | 1 | Introduction and abbreviations | |
-| 2 | Dataset and STS information | Tables S1 to S3 |
+| 2 | Dataset and STS information | Tables S1–S3 |
 | 3 | Clustering method and results | Table S4, Figure S1 |
-| 4 | Complete MILP formulation (sets, parameters, variables, objective, constraints, assumptions) | Tables S5 and S6, Eqs. (1) to (17) |
+| 4 | Complete MILP formulation | Tables S5–S6, Equations (1)–(17) |
 | 5 | Optimization results by scenario | Table S7 |
 | 6 | Economic and sensitivity analysis | Table S8, Figure S2 |
-| 7 | Additional figures | Figures S3 and S4 |
+| 7 | Additional figures | Figures S3–S4 |
 | 8 | Reproducibility notes and data availability | |
 
-## Where each part connects to the paper
+## Relationship with the Conference Paper
 
-| Paper | Supplementary document |
-|:--|:--|
-| Data and clustering (Section 2.2) | Section 2 and Section 3 |
-| Model formulation (Eqs. 1 to 17) | Section 4 |
+| Conference Paper | Supplementary Material |
+|---|---|
+| Data and clustering (Section 2.2) | Sections 2 and 3 |
+| Model formulation (Equations 1–17) | Section 4 |
 | Scenario results (Table 2) | Section 5, Table S7 |
-| Sensitivity analysis (Table 3, Fig. 2) | Section 6, Table S8 |
+| Sensitivity analysis (Table 3, Figure 2) | Section 6, Table S8 |
 
-## Data summary
+## Data Summary
 
-- 20 STS in Rajshahi, with coordinates and daily waste generation of 8 to 31 t/day
-- 4 K-means clusters
-- 3 vehicle classes: sweepers of 1.5 t and 3.0 t, and a shuttle of 5.0 t
-- 11 scenarios (Z0 to Z10), with total waste of 434.68 to 470.60 t/day
-- Daily cost reduction of 10.76% to 17.52% against traditional dispatch
+- 20 Secondary Transfer Stations (STS) in Rajshahi.
+- Four K-means clusters.
+- Three vehicle classes: 1.5-tonne sweepers, 3.0-tonne sweepers, and 5.0-tonne shuttles.
+- Eleven scenarios (Z0–Z10).
+- Total waste generation ranging from 434.68 to 470.60 tonnes per day.
+- Daily cost reduction of 10.76%–17.52% compared with traditional dispatch.
 
 ## Reproducibility
 
-The model is solved for each cluster with Gurobi. The supplementary document states which model inputs are tabulated and which are not (Section 8.1).
+The optimization model is implemented in Python and solved using Gurobi. The supplementary document provides additional details regarding the mathematical formulation, model inputs, assumptions, and computational results.
+
+## Data and Code Availability
+
+The supplementary materials, including the detailed mathematical formulation, Python implementation of the MILP model and K-means clustering algorithm, research datasets, additional figures, and extended results, are publicly available through Zenodo.
+
+**DOI:** https://doi.org/10.5281/zenodo.24186922
 
 ## Citation
 
-Please cite the ICERIE 2027 paper (Paper ID 87).
-
-Repository DOI/URL: *to be added*
+Please cite the corresponding ICERIE 2027 conference paper (Paper ID 87) when using this research material.
 
 ## Contact
 
-Corresponding author: Md. Mohibul Islam, Department of IPE, RUET (mohibul@ipe.ruet.ac.bd)
+**Corresponding Author:** Md. Mohibul Islam  
+Department of Industrial & Production Engineering, RUET  
+Email: mohibul@ipe.ruet.ac.bd
